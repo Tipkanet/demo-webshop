@@ -7,7 +7,9 @@ repositories {
 }
 
 def junitVersion = "5.8.1",
+        allureVersion = "2.15.0",
     selenideVersion = '6.0.3'
+
 
 dependencies {
     testImplementation(
@@ -15,6 +17,7 @@ dependencies {
             "io.rest-assured:rest-assured:4.4.0",
             "org.assertj:assertj-core:3.21.0",
             "com.codeborne:selenide:$selenideVersion",
+            "io.qameta.allure:allure-selenide:$allureVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion")
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
 }
